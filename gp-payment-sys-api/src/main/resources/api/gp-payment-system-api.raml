@@ -1,0 +1,26 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/3601b6b9-32ea-4b7b-87a5-eee83886efce/ # 
+title: GP PAYMENT SYSTEM API
+/gpSystemDetails:
+    post:
+      description: GP PAYMENT SYSTEM API
+      body:
+        application/json:
+          example:
+            {
+   	"customer number":"123654"
+            } 
+
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                {
+                  
+  "NAME": "XYZ",  
+  "Company": "ABCD",
+	"customer number":"123654"
+  }
+      
+

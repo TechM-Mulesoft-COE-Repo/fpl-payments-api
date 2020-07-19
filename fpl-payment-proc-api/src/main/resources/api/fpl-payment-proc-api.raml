@@ -1,0 +1,33 @@
+#%RAML 1.0
+title: GP-FPL-PROCESS-API
+
+/fplPaymentProcessDetails:
+  post:
+    description: FPL PAYMENTS PROCESS API
+    body:
+      application/json:
+        example:
+          {
+            "client id":"1236541236"
+          }
+    responses:
+      200:
+        description: FPL PAYMENTS PROCESS API
+        body:
+          application/json:
+            example:
+              {
+                "BillNo": 102,
+	"DT": "16 - 07 - 2020",
+	"TIME": "12:15",
+	"ERONO": 109,
+	"NAME": "A C GUARDS",
+	"SECNAME": " A C GUARDS",
+	"GRP": "M",
+	"SCNO": attributes.queryParams.clientid,
+	"USCNO": 100123458,
+	"BILLAMOUNT": 569874,
+	"ADJ.AMOUNT": 0.0,
+	"TOTAL AMOUNT": 569874
+
+              }      

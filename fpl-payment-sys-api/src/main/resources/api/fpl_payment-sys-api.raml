@@ -1,0 +1,44 @@
+#%RAML 1.0
+title: FPL PAYMENT SYSTEM API
+
+/fplPaymentSystemDetails:
+    post:
+      description: FPL PAYMENT SYSTEM API
+      body:
+        application/json:
+          example:
+            {
+              "BillNo":123,
+	"USCNO":1236589740,
+	"Company":ABCD,
+	"AMOUNT":50
+            }
+      
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                {
+                  
+  "BillNo": 102,
+  "DT": "16 - 07 - 2020",
+  "TIME": "12:15",
+  "ERONO": 109,
+  "NAME": "A C GUARDS",
+  "SECNAME": " A C GUARDS",
+  "GRP": "M",
+  "SCNO": 1000012365,
+  "USCNO": 100123458,
+
+  "PRES": 55692,
+  "PREV": 45896,
+  "UNITS": 10030,
+
+  "BILLAMOUNT": 569874,
+  "ADJ.AMOUNT": 0.0,
+  "TOTAL AMOUNT": 569874
+
+}
+      
+

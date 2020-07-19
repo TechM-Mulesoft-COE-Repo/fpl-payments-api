@@ -1,0 +1,26 @@
+#%RAML 1.0
+title: moc-gp-payment-sys-api
+
+/mocGPPaymentDetails:
+  post:
+      description: MOC GP PAYMENT SYSTEM API
+      body:
+        application/json:
+          example:
+            {
+   	"customer number":"123654"
+            } 
+
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                {
+                  
+  "NAME": "XYZ",  
+  "Company": "ABCD",
+	"customer number":"123654"
+  }
+      
+
